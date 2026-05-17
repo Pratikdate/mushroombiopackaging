@@ -37,6 +37,10 @@
       font-size: 16px;
       line-height: 1.6;
       overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+      margin: 0;
+      padding: 0;
     }
 
     a {
@@ -1686,7 +1690,7 @@
     }
 
     .footer-inner {
-      max-width: 1280px;
+      max-width: 100%;
       margin: 0 auto;
     }
 
@@ -2390,10 +2394,10 @@
             </svg></a>
           <div class="dropdown">
             <a href="#custom"><img
-                src="https://mushroompackaging.com/cdn/shop/files/BreakawayToolingMenu_MushroomPackaging-1_copy.jpg?v=1691426057"
+                src="./custom_packaging.png"
                 alt="">Custom Packaging</a>
             <a href="#timeline"><img
-                src="https://mushroompackaging.com/cdn/shop/files/technical-data-photo_2x_3f2de009-e89e-45fb-9f04-c2e680cd5880.png?v=1675930175"
+                src="./user_experience.jpg"
                 alt="">Technical Data</a>
           </div>
         </li>
@@ -2403,10 +2407,10 @@
             </svg></a>
           <div class="dropdown">
             <a href="#products" data-filter-cat="protective"><img
-                src="https://mushroompackaging.com/cdn/shop/files/Breakaway_Corners_Full.jpg?v=1670267492"
+                src="./skincare_packaging.jpeg"
                 alt="">Protective Packaging</a>
             <a href="#products" data-filter-cat="cold"><img
-                src="https://mushroompackaging.com/cdn/shop/files/Small_cooler_both_Pieces.jpg?v=1670267413" alt="">Cold
+                src="./custom_packaging.png" alt="">Cold
               Shipping</a>
             <a href="#products" data-filter-cat="gift"><img src="./user_experience.jpg" alt="">Gift
               Boxes</a>
@@ -2414,9 +2418,9 @@
                 src="./custom_molded_interior.png" alt="">Custom
               Molded</a>
             <a href="#products" data-filter-cat="samples"><img
-                src="https://mushroompackaging.com/cdn/shop/files/Sample_Menu_Item.jpg?v=1691425563" alt="">Samples</a>
+                src="./custom_molded_interior.png" alt="">Samples</a>
             <a href="#products" data-filter-cat="all"><img
-                src="https://mushroompackaging.com/cdn/shop/files/BreakawayCornersBoxwithBook.jpg?v=1670267657"
+                src="./watch_packaging.png"
                 alt="">Shop All</a>
           </div>
         </li>
@@ -2426,10 +2430,10 @@
             </svg></a>
           <div class="dropdown">
             <a href="#process"><img
-                src="https://mushroompackaging.com/cdn/shop/files/BreakawayToolingMenu_MushroomPackaging-1_copy.jpg?v=1691426057"
+                src="./custom_packaging.png"
                 alt="">Our Process</a>
             <a href="#timeline"><img
-                src="https://mushroompackaging.com/cdn/shop/files/technical-data-photo_2x_3f2de009-e89e-45fb-9f04-c2e680cd5880.png?v=1675930175"
+                src="./user_experience.jpg"
                 alt="">Technical Data</a>
           </div>
         </li>
@@ -2439,21 +2443,21 @@
             </svg></a>
           <div class="dropdown">
             <a href="#" onclick="openPage('about');return false;"><img
-                src="https://mushroompackaging.com/cdn/shop/files/logo-header.png?v=1675931359" alt="">About</a>
+                src="./skincare_packaging.jpeg" alt="">About</a>
             <a href="#" onclick="openPage('casestudies');return false;"><img
-                src="https://mushroompackaging.com/cdn/shop/files/our-customer-photo_2x_86ff1d4a-bead-4fbb-a139-ef311e005a33.png?v=1675925910"
+                src="./custom_packaging.png"
                 alt="">Our Work</a>
             <a href="#" onclick="openPage('casestudies');return false;"><img
-                src="https://mushroompackaging.com/cdn/shop/files/KeapMenu_MushroomPackaging_1c6238de-a519-4bb6-a4cc-fd7bc4c45f54.jpg?v=1691426034"
+                src="./user_experience.jpg"
                 alt="">Case Studies</a>
             <a href="#" onclick="openPage('licensees');return false;"><img
-                src="https://mushroompackaging.com/cdn/shop/files/licensing-photo_2x_a92f09f4-17cb-4299-9ef7-61ee97974399.png?v=1675925960"
+                src="./watch_packaging.png"
                 alt="">Licensees</a>
             <a href="#faq"><img
-                src="https://mushroompackaging.com/cdn/shop/files/faq-photo_2x_e67f2c15-bf5a-4e46-8203-53b3fe5b80a6.png?v=1675926128"
+                src="./watch_packaging.png"
                 alt="">FAQ</a>
             <a href="#" onclick="openPage('contact');return false;"><img
-                src="https://mushroompackaging.com/cdn/shop/files/contact-photo_2x_a26faac3-3a4c-40ef-847a-39cf88c17e92.png?v=1675926150"
+                src="./custom_molded_interior.png"
                 alt="">Contact</a>
           </div>
         </li>
@@ -2477,14 +2481,14 @@
     <div class="hero-slide active">
       <div class="hero-slide-bg">
         <img class="hero-img"
-          src="https://mushroompackaging.com/cdn/shop/files/BreakawayCornersBoxwithBook.jpg?v=1670267657"
+          src="./watch_packaging.png"
           alt="Mushroom Bio Packaging" loading="eager">
       </div>
       <div class="hero-content">
         <h1>Made by Nature,<br>Designed by You.</h1>
         <p>Mushroom Bio Packaging grows planet-friendly protective packaging by combining agricultural feedstock with
           the natural binding strength of mycelium — the root structure of mushrooms.</p>
-        <a href="#custom" class="btn-white">Learn More</a>
+        <a href="#" onclick="openPage('blog-custom'); return false;" class="btn-white">Learn More</a>
       </div>
     </div>
     <div class="hero-slide">
@@ -2508,7 +2512,7 @@
         <h1>Custom Packaging<br>with a Purpose.</h1>
         <p>We engineer bespoke solutions that sustainably protect your unique products in transit. Rapid prototyping and
           product testing for your perfect packaging solution.</p>
-        <a href="#process" class="btn-white">Learn More</a>
+        <a href="#" onclick="openPage('blog-process'); return false;" class="btn-white">Learn More</a>
       </div>
     </div>
     <div class="hero-dots">
@@ -2629,7 +2633,7 @@
   <div id="custom">
     <div class="content-block reveal">
       <div class="cb-media">
-        <img src="https://mushroompackaging.com/cdn/shop/files/Breakaway_Corners_Full.jpg?v=1670267492"
+        <img src="./skincare_packaging.jpeg"
           alt="Breakaway Corners" loading="lazy">
       </div>
       <div class="cb-text">
@@ -2637,7 +2641,7 @@
         <p>Mushroom Bio Packaging grows planet-friendly protective packaging by combining agricultural feedstock with
           the natural binding strength of mycelium, the root structure of mushrooms. We make packaging that puts the
           planet first.</p>
-        <a href="#custom" class="btn-dark">Learn More</a>
+        <a href="#" onclick="openPage('blog-custom'); return false;" class="btn-dark">Learn More</a>
       </div>
     </div>
 
@@ -2665,7 +2669,7 @@
         <p>We engineer bespoke solutions that sustainably protect your unique products in transit. Our
           facilities allow for rapid prototyping and product testing to create the perfect solution for your packaging
           needs and timeline.</p>
-        <a href="#process" class="btn-outline-white">Learn More</a>
+        <a href="#" onclick="openPage('blog-process'); return false;" class="btn-outline-white">Learn More</a>
       </div>
     </div>
   </div>
@@ -2693,15 +2697,15 @@
       </div>
       <div class="slide-img-panel">
         <div class="s-img on"><img
-            src="https://mushroompackaging.com/cdn/shop/files/BreakawayCornersBoxwithBook.jpg?v=1670267657" alt=""
+            src="./watch_packaging.png" alt=""
             loading="lazy"></div>
         <div class="s-img"><img
-            src="https://mushroompackaging.com/cdn/shop/files/Small_cooler_both_Pieces.jpg?v=1670267413" alt=""
+            src="./custom_packaging.png" alt=""
             loading="lazy"></div>
         <div class="s-img"><img src="./custom_molded_interior.png"
             alt="Custom Molded Interior" loading="lazy"></div>
         <div class="s-img"><img
-            src="https://mushroompackaging.com/cdn/shop/files/Breakaway_Corners_Full.jpg?v=1670267492" alt=""
+            src="./skincare_packaging.jpeg" alt=""
             loading="lazy"></div>
         <div class="s-img"><img src="./skincare_packaging.jpeg" alt="Skincare Packaging" loading="lazy"></div>
       </div>
@@ -2751,7 +2755,7 @@
       <!-- Featured hero card — Breakaway Corners -->
       <div class="prod-hero reveal" data-cat="protective">
         <div class="prod-hero-img">
-          <img src="https://mushroompackaging.com/cdn/shop/files/Breakaway_Corners_Full.jpg?v=1670267492"
+          <img src="./skincare_packaging.jpeg"
             alt="Breakaway Corners protective packaging" loading="lazy">
           <div class="prod-hero-badge">Our Signature Product</div>
         </div>
@@ -2779,7 +2783,7 @@
         <!-- Shoebox Cooler -->
         <div class="pcard" data-cat="cold">
           <div class="pcard-img">
-            <img src="https://mushroompackaging.com/cdn/shop/files/Small_cooler_both_Pieces.jpg?v=1670267413"
+            <img src="./custom_packaging.png"
               alt="Shoebox Cooler" loading="lazy">
             <span class="pcard-badge">Cold Shipping</span>
           </div>
@@ -2848,7 +2852,7 @@
         <!-- Breakaway Corners (grid card) -->
         <div class="pcard" data-cat="protective">
           <div class="pcard-img">
-            <img src="https://mushroompackaging.com/cdn/shop/files/BreakawayCornersBoxwithBook.jpg?v=1670267657"
+            <img src="./watch_packaging.png"
               alt="Breakaway Corners in Box" loading="lazy">
             <span class="pcard-badge">Protective</span>
           </div>
@@ -2955,7 +2959,7 @@
             <h3>Mycelium Solutions</h3>
             <p>Our top tier design team develops precision mycelium solutions to your packaging requirements. From
               concept to compostable end-product — we guide every step.</p>
-            <a href="#custom" class="wc-read">Read More</a>
+            <a href="#" onclick="openPage('blog-custom'); return false;" class="wc-read">Read More</a>
           </div>
         </div>
 
@@ -2985,7 +2989,7 @@
             <h3>Prototype Design</h3>
             <p>We design bespoke solutions that sustainably protect your products.
               Rapid prototyping ensures durability and perfect fit.</p>
-            <a href="#timeline" class="wc-read">Read More</a>
+            <a href="#" onclick="openPage('blog-timeline'); return false;" class="wc-read">Read More</a>
           </div>
         </div>
 
@@ -3038,7 +3042,7 @@
             <h3>7 Days to Grow</h3>
             <p>The mycelium grows inside under standard environmental conditions, taking just 7 days for your packaging
               to emerge complete and ready to ship worldwide.</p>
-            <a href="#phases" class="wc-read">Read More</a>
+            <a href="#" onclick="openPage('blog-process'); return false;" class="wc-read">Read More</a>
           </div>
         </div>
 
@@ -4429,7 +4433,7 @@
                 power of fungi, producing packaging that performs like foam but composts at home in weeks.</p>
             </div>
             <img class="sp-img-block"
-              src="https://mushroompackaging.com/cdn/shop/files/BreakawayToolingMenu_MushroomPackaging-1_copy.jpg?v=1691426057"
+              src="./skincare_packaging.jpeg"
               alt="Our process">
           </div>
 
@@ -4485,7 +4489,7 @@
 
           <div class="sp-two-col sp-reveal" style="margin-top:80px">
             <img class="sp-img-block"
-              src="https://mushroompackaging.com/cdn/shop/files/technical-data-photo_2x_3f2de009-e89e-45fb-9f04-c2e680cd5880.png?v=1675930175"
+              src="./user_experience.jpg"
               alt="Team">
             <div>
               <div class="sp-section-label">The Team</div>
@@ -4556,7 +4560,7 @@
           <div class="sp-grid sp-reveal">
             <div class="sp-card">
               <img class="sp-card-img"
-                src="https://mushroompackaging.com/cdn/shop/files/KeapMenu_MushroomPackaging_1c6238de-a519-4bb6-a4cc-fd7bc4c45f54.jpg?v=1691426034"
+                src="./user_experience.jpg"
                 alt="Consumer Goods">
               <div class="sp-card-body">
                 <div class="sp-card-tag">Use Case · Consumer Goods</div>
@@ -4568,7 +4572,7 @@
             </div>
             <div class="sp-card">
               <img class="sp-card-img"
-                src="https://mushroompackaging.com/cdn/shop/files/our-customer-photo_2x_86ff1d4a-bead-4fbb-a139-ef311e005a33.png?v=1675925910"
+                src="./custom_packaging.png"
                 alt="Electronics">
               <div class="sp-card-body">
                 <div class="sp-card-tag">Use Case · Electronics & Tech</div>
@@ -4580,7 +4584,7 @@
             </div>
             <div class="sp-card">
               <img class="sp-card-img"
-                src="https://mushroompackaging.com/cdn/shop/files/Small_cooler_both_Pieces.jpg?v=1670267413"
+                src="./custom_packaging.png"
                 alt="Cold Chain">
               <div class="sp-card-body">
                 <div class="sp-card-tag">Use Case · Food & Cold Chain</div>
@@ -4602,7 +4606,7 @@
             </div>
             <div class="sp-card">
               <img class="sp-card-img"
-                src="https://mushroompackaging.com/cdn/shop/files/BreakawayCornersBoxwithBook.jpg?v=1670267657"
+                src="./watch_packaging.png"
                 alt="Furniture">
               <div class="sp-card-body">
                 <div class="sp-card-tag">Use Case · Furniture & Home</div>
@@ -4641,7 +4645,7 @@
       </div>
 
       <!-- ── NEWS PAGE ── -->
-      <div class="sp-page" id="sp-news" style="display:none">
+            <div class="sp-page" id="sp-news" style="display:none">
         <header class="sp-header">
           <div class="sp-header-inner">
             <button class="sp-back" onclick="closePage()">
@@ -4651,92 +4655,81 @@
               Back to Home
             </button>
             <div class="sp-logo-name">Mushroom<br>Bio Packaging<span>Grown, Not Made.</span></div>
-            <div class="sp-breadcrumb">Home / <span>News</span></div>
+            <div class="sp-breadcrumb">Home / <span>News & Updates</span></div>
           </div>
         </header>
 
         <div class="sp-hero">
-          <h1>Latest News</h1>
-          <p>Updates, press coverage, and announcements from the world of mycelium packaging.</p>
+          <h1>Our Journey Begins</h1>
+          <p>Follow our progress as we develop, prototype, and seek partners for our mycelium packaging technology.</p>
         </div>
 
         <div class="sp-body">
           <div class="sp-two-col sp-reveal" style="margin-top:0; border-bottom:1px solid #e0ddd8; padding-bottom:48px">
             <img class="sp-img-block"
-              src="https://mushroompackaging.com/cdn/shop/files/BreakawayToolingMenu_MushroomPackaging-1_copy.jpg?v=1691426057"
+              src="./watch_packaging.png"
               alt="News">
             <div>
-              <div class="sp-card-tag" style="display:block;margin-bottom:10px">Press Release · May 2026</div>
-              <h2 style="font-size:26px;font-weight:700;line-height:1.3;margin-bottom:14px">Mushroom Bio Packaging
-                Raises Series B to Scale Mycelium Production Globally</h2>
-              <p style="color:#555;font-size:14px;line-height:1.75">We are proud to announce the close of our $28M
-                Series B funding round, led by Earthrise Ventures, to expand our growing facilities across Europe and
-                Southeast Asia — bringing planet-friendly packaging to more partners worldwide.</p>
-              <div class="sp-card-link" style="margin-top:20px">Read Full Release →</div>
+              <div class="sp-card-tag" style="display:block;margin-bottom:10px">Announcement · May 2026</div>
+              <h2 style="font-size:26px;font-weight:700;line-height:1.3;margin-bottom:14px">Seeking Early Adopters for Pilot Program</h2>
+              <p style="color:#555;font-size:14px;line-height:1.75">We are excited to officially launch our search for visionary brand partners. We are looking for forward-thinking clients willing to pilot our custom-grown mycelium packaging solutions and help us refine our technology for commercial scale.</p>
+              <div class="sp-card-link" style="margin-top:20px;cursor:pointer" onclick="openPage('news-1')">Read Full Update →</div>
             </div>
           </div>
 
           <div class="sp-grid sp-reveal" style="margin-top:48px">
             <div class="sp-card">
               <div class="sp-card-body">
-                <div class="sp-card-tag">Industry · March 2026</div>
-                <h3>Featured in Fast Company's World Changing Ideas 2026</h3>
-                <p>Our mycelium cold-chain liner was recognised as one of Fast Company's top innovations in sustainable
-                  logistics for 2026.</p>
-                <div class="sp-card-link" style="margin-top:14px">Read More →</div>
+                <div class="sp-card-tag">Prototyping · March 2026</div>
+                <h3>Prototyping Our First Cold-Chain Liner</h3>
+                <p>We've successfully grown our first batch of thermal insulating liners. Early lab tests show promising results against traditional EPS coolers.</p>
+                <div class="sp-card-link" style="margin-top:14px;cursor:pointer" onclick="openPage('news-2')">Read More →</div>
               </div>
             </div>
             <div class="sp-card">
               <div class="sp-card-body">
                 <div class="sp-card-tag">Partnership · February 2026</div>
-                <h3>New Partnership with European Luxury Goods Alliance</h3>
-                <p>Twelve luxury brands across France, Italy, and Germany will transition to custom mycelium gift
-                  packaging throughout 2026, eliminating over 400 tonnes of foam annually.</p>
-                <div class="sp-card-link" style="margin-top:14px">Read More →</div>
+                <h3>Seeking Visionary Luxury Brands for Beta Testing</h3>
+                <p>We believe the luxury sector is perfect for mycelium packaging. We're actively looking for boutique brands to test our velvet-soft custom molds.</p>
+                <div class="sp-card-link" style="margin-top:14px;cursor:pointer" onclick="openPage('news-3')">Read More →</div>
               </div>
             </div>
             <div class="sp-card">
               <div class="sp-card-body">
                 <div class="sp-card-tag">Research · January 2026</div>
-                <h3>New Study Confirms Superior Compostability vs. Bio-Plastics</h3>
-                <p>An independent study from the University of Wageningen confirmed that our mycelium packaging degrades
-                  4× faster than PLA bio-plastics under home-compost conditions.</p>
-                <div class="sp-card-link" style="margin-top:14px">Read More →</div>
+                <h3>Early Testing Shows Promising Compostability</h3>
+                <p>Our initial backyard compost tests indicate that our prototypes break down within 60 days, leaving no toxic residue behind.</p>
+                <div class="sp-card-link" style="margin-top:14px;cursor:pointer" onclick="openPage('news-4')">Read More →</div>
               </div>
             </div>
             <div class="sp-card">
               <div class="sp-card-body">
-                <div class="sp-card-tag">Event · December 2025</div>
-                <h3>We Spoke at COP30 — Here's What We Said</h3>
-                <p>Our CEO presented the case for biological packaging at the UN Climate Conference, calling on global
-                  brands to make the switch by 2030.</p>
-                <div class="sp-card-link" style="margin-top:14px">Read More →</div>
+                <div class="sp-card-tag">Vision · December 2025</div>
+                <h3>Our Vision for a Plastic-Free 2030</h3>
+                <p>Read our founding manifesto on why we started Mushroom Bio Packaging and how we plan to eliminate single-use foam.</p>
+                <div class="sp-card-link" style="margin-top:14px;cursor:pointer" onclick="openPage('news-5')">Read More →</div>
               </div>
             </div>
             <div class="sp-card">
               <div class="sp-card-body">
-                <div class="sp-card-tag">Award · November 2025</div>
-                <h3>Winner: Sustainable Packaging Coalition Innovation Award</h3>
-                <p>Mushroom Bio Packaging received the SPC's top honour for breakthrough material innovation in
-                  protective packaging.</p>
-                <div class="sp-card-link" style="margin-top:14px">Read More →</div>
+                <div class="sp-card-tag">Development · November 2025</div>
+                <h3>Developing the Breakaway Corner Prototype</h3>
+                <p>A behind-the-scenes look at how we engineered our first product design: the home-compostable breakaway corner protector.</p>
+                <div class="sp-card-link" style="margin-top:14px;cursor:pointer" onclick="openPage('news-6')">Read More →</div>
               </div>
             </div>
             <div class="sp-card">
               <div class="sp-card-body">
                 <div class="sp-card-tag">Product · October 2025</div>
-                <h3>Introducing GrowKit: A Sample Set for Brands</h3>
-                <p>We launched a curated sample kit allowing procurement teams to test mycelium packaging in their own
-                  facilities before committing to a custom program.</p>
-                <div class="sp-card-link" style="margin-top:14px">Read More →</div>
+                <h3>Request a Prototype: See the Material Yourself</h3>
+                <p>We are putting together limited sample sets for interested investors and potential pilot clients. Request yours today.</p>
+                <div class="sp-card-link" style="margin-top:14px;cursor:pointer" onclick="openPage('news-7')">Read More →</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- ── LICENSEES PAGE ── -->
-      <div class="sp-page" id="sp-licensees" style="display:none">
+<div class="sp-page" id="sp-licensees" style="display:none">
         <header class="sp-header">
           <div class="sp-header-inner">
             <button class="sp-back" onclick="closePage()">
@@ -4788,7 +4781,7 @@
               </div>
             </div>
             <img class="sp-img-block"
-              src="https://mushroompackaging.com/cdn/shop/files/licensing-photo_2x_a92f09f4-17cb-4299-9ef7-61ee97974399.png?v=1675925960"
+              src="./watch_packaging.png"
               alt="Licensees">
           </div>
 
@@ -5179,6 +5172,251 @@
         </div>
       </div>
 
+
+            <!-- ── NEWS PAGE 1 ── -->
+      <div class="sp-page" id="sp-news-1" style="display:none">
+        <header class="sp-header">
+          <div class="sp-header-inner">
+            <button class="sp-back" onclick="openPage('news')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7" /></svg> Back to News
+            </button>
+            <div class="sp-logo-name">Mushroom<br>Bio Packaging<span>Grown, Not Made.</span></div>
+            <div class="sp-breadcrumb">Home / News / <span>Pilot Program</span></div>
+          </div>
+        </header>
+        <div class="sp-hero">
+          <h1>Seeking Early Adopters for Pilot Program</h1>
+          <p>Announcement · May 2026</p>
+        </div>
+        <div class="sp-body" style="max-width:800px; margin:0 auto; padding-top:40px;">
+          <img src="./watch_packaging.png" alt="Prototype Packaging" style="width:100%; height:auto; margin-bottom: 32px; border:1px solid #e0ddd8">
+          <div class="sp-reveal" style="font-size:16px; line-height:1.8; color:#444;">
+             <p>As an early-stage startup, our most critical goal is transitioning from the lab to the real world. We are excited to officially launch our search for visionary brand partners willing to participate in our pilot program.</p>
+             <p>We are looking for forward-thinking clients who share our commitment to a plastic-free future. By partnering with us now, you will help us test and refine our custom-grown mycelium packaging solutions. Your feedback will directly influence our manufacturing processes as we prepare for commercial scale.</p>
+             <p>"This is an opportunity for brands to be at the forefront of biological manufacturing," said our founder. "We are offering our early clients heavily subsidized prototyping and dedicated engineering support to ensure their products are protected sustainably."</p>
+             <p>If you are a business looking to eliminate EPS foam from your supply chain, we invite you to reach out and explore a pilot project with us.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── NEWS PAGE 2 ── -->
+      <div class="sp-page" id="sp-news-2" style="display:none">
+        <header class="sp-header">
+          <div class="sp-header-inner">
+            <button class="sp-back" onclick="openPage('news')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7" /></svg> Back to News
+            </button>
+            <div class="sp-logo-name">Mushroom<br>Bio Packaging<span>Grown, Not Made.</span></div>
+            <div class="sp-breadcrumb">Home / News / <span>Prototyping</span></div>
+          </div>
+        </header>
+        <div class="sp-hero">
+          <h1>Prototyping Our First Cold-Chain Liner</h1>
+          <p>Prototyping · March 2026</p>
+        </div>
+        <div class="sp-body" style="max-width:800px; margin:0 auto; padding-top:40px;">
+          <div class="sp-reveal" style="font-size:16px; line-height:1.8; color:#444;">
+             <p>We've successfully grown our first batch of thermal insulating liners in our experimental lab space. The cold chain industry relies heavily on single-use plastics to transport perishable foods and medical supplies, making it a prime target for disruption.</p>
+             <p>Our early prototypes show exceptional thermal insulation—comparable to traditional Styrofoam coolers. More importantly, these liners remain 100% home compostable. While we are still optimizing the growth cycles and mold designs, these initial results prove that our concept is viable.</p>
+             <p>We are currently seeking small-scale food delivery or local farm partners to conduct real-world transit tests. If you ship perishable goods and want to ditch the foam coolers, let's talk.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── NEWS PAGE 3 ── -->
+      <div class="sp-page" id="sp-news-3" style="display:none">
+        <header class="sp-header">
+          <div class="sp-header-inner">
+            <button class="sp-back" onclick="openPage('news')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7" /></svg> Back to News
+            </button>
+            <div class="sp-logo-name">Mushroom<br>Bio Packaging<span>Grown, Not Made.</span></div>
+            <div class="sp-breadcrumb">Home / News / <span>Luxury Beta</span></div>
+          </div>
+        </header>
+        <div class="sp-hero">
+          <h1>Seeking Visionary Luxury Brands for Beta Testing</h1>
+          <p>Partnership · February 2026</p>
+        </div>
+        <div class="sp-body" style="max-width:800px; margin:0 auto; padding-top:40px;">
+          <div class="sp-reveal" style="font-size:16px; line-height:1.8; color:#444;">
+             <p>Luxury packaging should feel premium, but it shouldn't cost the earth. We believe the luxury sector is perfect for the tactile, velvet-soft finish of our mycelium material.</p>
+             <p>We are actively looking for boutique brands in cosmetics, fragrances, and jewelry to beta test our custom molds. Because we grow the packaging to perfectly cradle your product, we can offer an unboxing experience that is both highly protective and deeply sustainable.</p>
+             <p>Beta partners will work directly with our design team to create bespoke shapes that reflect their brand's aesthetic, helping us prove the viability of biological packaging in high-end retail.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── NEWS PAGE 4 ── -->
+      <div class="sp-page" id="sp-news-4" style="display:none">
+        <header class="sp-header">
+          <div class="sp-header-inner">
+            <button class="sp-back" onclick="openPage('news')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7" /></svg> Back to News
+            </button>
+            <div class="sp-logo-name">Mushroom<br>Bio Packaging<span>Grown, Not Made.</span></div>
+            <div class="sp-breadcrumb">Home / News / <span>Compost Testing</span></div>
+          </div>
+        </header>
+        <div class="sp-hero">
+          <h1>Early Testing Shows Promising Compostability</h1>
+          <p>Research · January 2026</p>
+        </div>
+        <div class="sp-body" style="max-width:800px; margin:0 auto; padding-top:40px;">
+          <div class="sp-reveal" style="font-size:16px; line-height:1.8; color:#444;">
+             <p>A core promise of our technology is that it returns to the earth without a trace. This month, we concluded our first round of internal backyard compost tests.</p>
+             <p>We placed several prototype corner blocks into standard, unmanaged soil bins. We observed that the mycelium and hemp hurd structure began breaking down within 30 days. By day 60, the material had completely disintegrated, adding organic matter to the soil without leaving any microplastics or toxic residue behind.</p>
+             <p>While we plan to seek official third-party certifications once our manufacturing process is finalized, these early results give us immense confidence in the environmental benefits of our product.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── NEWS PAGE 5 ── -->
+      <div class="sp-page" id="sp-news-5" style="display:none">
+        <header class="sp-header">
+          <div class="sp-header-inner">
+            <button class="sp-back" onclick="openPage('news')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7" /></svg> Back to News
+            </button>
+            <div class="sp-logo-name">Mushroom<br>Bio Packaging<span>Grown, Not Made.</span></div>
+            <div class="sp-breadcrumb">Home / News / <span>Our Vision</span></div>
+          </div>
+        </header>
+        <div class="sp-hero">
+          <h1>Our Vision for a Plastic-Free 2030</h1>
+          <p>Vision · December 2025</p>
+        </div>
+        <div class="sp-body" style="max-width:800px; margin:0 auto; padding-top:40px;">
+          <div class="sp-reveal" style="font-size:16px; line-height:1.8; color:#444;">
+             <p>We started Mushroom Bio Packaging because we were tired of seeing rivers choked with polystyrene and landfills overflowing with "recyclable" plastics that never actually get recycled.</p>
+             <p>Our vision is simple: by 2030, biological, grown packaging should be the default for protective shipping. We are building the foundational technology to make this possible. It requires rethinking the entire supply chain—from utilizing agricultural waste as raw material to decentralizing production so packaging is grown near where it's used.</p>
+             <p>We are just getting started, but our roadmap is clear. We are seeking investors, clients, and team members who share this ambitious vision to join us on this journey.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── NEWS PAGE 6 ── -->
+      <div class="sp-page" id="sp-news-6" style="display:none">
+        <header class="sp-header">
+          <div class="sp-header-inner">
+            <button class="sp-back" onclick="openPage('news')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7" /></svg> Back to News
+            </button>
+            <div class="sp-logo-name">Mushroom<br>Bio Packaging<span>Grown, Not Made.</span></div>
+            <div class="sp-breadcrumb">Home / News / <span>Breakaway Prototype</span></div>
+          </div>
+        </header>
+        <div class="sp-hero">
+          <h1>Developing the Breakaway Corner Prototype</h1>
+          <p>Development · November 2025</p>
+        </div>
+        <div class="sp-body" style="max-width:800px; margin:0 auto; padding-top:40px;">
+          <div class="sp-reveal" style="font-size:16px; line-height:1.8; color:#444;">
+             <p>Designing packaging that is both protective and easy to dispose of is a significant engineering challenge. This month, we unveiled our first design concept: the Breakaway Corner.</p>
+             <p>Intended to replace styrofoam corner blocks used in shipping furniture and electronics, our prototype features precisely engineered perforations. This allows the end consumer to easily snap the corner into smaller pieces, which drastically speeds up the composting process in a home garden.</p>
+             <p>We are currently stress-testing these corners in our lab to ensure they meet standard drop-test requirements, tweaking the density of the mycelium growth to find the perfect balance between rigidity and flexibility.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── NEWS PAGE 7 ── -->
+      <div class="sp-page" id="sp-news-7" style="display:none">
+        <header class="sp-header">
+          <div class="sp-header-inner">
+            <button class="sp-back" onclick="openPage('news')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7" /></svg> Back to News
+            </button>
+            <div class="sp-logo-name">Mushroom<br>Bio Packaging<span>Grown, Not Made.</span></div>
+            <div class="sp-breadcrumb">Home / News / <span>Request a Prototype</span></div>
+          </div>
+        </header>
+        <div class="sp-hero">
+          <h1>Request a Prototype: See the Material Yourself</h1>
+          <p>Product · October 2025</p>
+        </div>
+        <div class="sp-body" style="max-width:800px; margin:0 auto; padding-top:40px;">
+          <div class="sp-reveal" style="font-size:16px; line-height:1.8; color:#444;">
+             <p>Seeing is believing. To help potential investors and pilot clients understand the potential of mycelium packaging, we are putting together a limited number of prototype sample sets.</p>
+             <p>These early samples demonstrate the versatility, strength, and unique velvety feel of mycelium materials. Because we are producing these by hand in our experimental lab, availability is strictly limited.</p>
+             <p>If your brand is serious about exploring biological packaging, or if you are an investor interested in the future of sustainable materials, please use our contact form to request a prototype kit. We'd love to show you what we're building.</p>
+          </div>
+        </div>
+      </div>
+
+<!-- ── BLOG PAGE CUSTOM ── -->
+      <div class="sp-page" id="sp-blog-custom" style="display:none">
+        <header class="sp-header">
+          <div class="sp-header-inner">
+            <button class="sp-back" onclick="closePage()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7" /></svg> Back to Home
+            </button>
+            <div class="sp-logo-name">Mushroom<br>Bio Packaging<span>Grown, Not Made.</span></div>
+            <div class="sp-breadcrumb">Home / Blog / <span>Custom Packaging</span></div>
+          </div>
+        </header>
+        <div class="sp-hero">
+          <h1>Custom Packaging: Made by Nature, Designed by You</h1>
+          <p>Learn how we engineer bespoke mycelium solutions for unique product shapes.</p>
+        </div>
+        <div class="sp-body" style="max-width:800px; margin:0 auto; padding-top:40px;">
+          <div class="sp-reveal" style="font-size:16px; line-height:1.8; color:#444;">
+             <p>Our custom packaging service goes beyond mere protective enclosures. It represents a paradigm shift where packaging is grown specifically to match the contours of your product. By utilizing the root structure of mushrooms—mycelium—and agricultural waste like hemp hurd, we mold completely custom shapes that offer exceptional shock absorption.</p>
+             <p>The journey starts with our engineering team designing a 3D model that perfectly cradles your item. From fragile glassware and high-end electronics to heavy mechanical components, we can achieve protective capabilities that rival expanded polystyrene (EPS) foam. After the digital design, we create custom thermoformed molds.</p>
+             <p>Once the molds are filled with our organic substrate, nature does the rest. Within a few days, the mycelium binds the hemp fibers together in a solid, resilient structure. We then halt the growth process through a careful drying phase, ensuring the packaging is safe, inert, and ready for transit. This bespoke approach means your customers receive a premium unboxing experience, knowing the packaging will fully compost in their backyard within 45 days.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── BLOG PAGE PROCESS ── -->
+      <div class="sp-page" id="sp-blog-process" style="display:none">
+        <header class="sp-header">
+          <div class="sp-header-inner">
+            <button class="sp-back" onclick="closePage()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7" /></svg> Back to Home
+            </button>
+            <div class="sp-logo-name">Mushroom<br>Bio Packaging<span>Grown, Not Made.</span></div>
+            <div class="sp-breadcrumb">Home / Blog / <span>Our Growth Process</span></div>
+          </div>
+        </header>
+        <div class="sp-hero">
+          <h1>The Growth Process: From Agricultural Waste to Packaging</h1>
+          <p>Discover the science and art behind our MycoComposite™ technology.</p>
+        </div>
+        <div class="sp-body" style="max-width:800px; margin:0 auto; padding-top:40px;">
+          <div class="sp-reveal" style="font-size:16px; line-height:1.8; color:#444;">
+             <p>At the heart of Mushroom Bio Packaging is a revolutionary but simple biological process. We don't manufacture our materials in traditional factories using heat and petroleum; instead, we grow them in controlled vertical farming environments. Our primary ingredients are agricultural byproducts—often corn stalks or hemp hurd—and a specialized strain of mycelium.</p>
+             <p>The process is broken down into several distinct phases. First is the <strong>Mixing Phase</strong>, where the raw agricultural waste is sterilized and inoculated with mycelium spores. The mixture is then allowed to colonize in a bulk state for a few days, creating a dense, white biological network.</p>
+             <p>Next comes the <strong>Molding Phase</strong>. The colonized substrate is broken up and packed into precise, 3D-designed molds. Over the next 4 to 6 days, the mycelium continues to grow, acting as a natural glue that binds the loose particles into a solid, durable shape matching the mold exactly.</p>
+             <p>Finally, we enter the <strong>Drying Phase</strong>. The grown parts are removed from their molds and baked in an oven. This crucial step deactivates the mycelium, stopping the growth and ensuring the final product is completely biologically inactive, lightweight, and incredibly strong. The result is a high-performance material that requires only a fraction of the energy used to produce synthetic foams.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── BLOG PAGE TIMELINE ── -->
+      <div class="sp-page" id="sp-blog-timeline" style="display:none">
+        <header class="sp-header">
+          <div class="sp-header-inner">
+            <button class="sp-back" onclick="closePage()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7" /></svg> Back to Home
+            </button>
+            <div class="sp-logo-name">Mushroom<br>Bio Packaging<span>Grown, Not Made.</span></div>
+            <div class="sp-breadcrumb">Home / Blog / <span>Our Journey</span></div>
+          </div>
+        </header>
+        <div class="sp-hero">
+          <h1>Our Timeline: Pioneering the Future of Sustainable Materials</h1>
+          <p>A look back at how we transitioned from a wild idea to a global manufacturing standard.</p>
+        </div>
+        <div class="sp-body" style="max-width:800px; margin:0 auto; padding-top:40px;">
+          <div class="sp-reveal" style="font-size:16px; line-height:1.8; color:#444;">
+             <p>Mushroom Bio Packaging began with a simple observation: nature already knows how to build complex, durable structures without generating waste. Our founders recognized that mycelium, the vegetative part of fungi, is essentially nature's recycling system. Why couldn't we harness it to replace environmentally disastrous single-use plastics?</p>
+             <p>In our early years, the challenge was scalability. We spent countless hours in the lab experimenting with different agricultural waste streams and fungal strains. We needed a combination that grew quickly, reliably, and produced a uniform density. After significant breakthroughs, we launched our first commercial product: Breakaway Corners, proving that biological materials could pass standard drop tests.</p>
+             <p>As word spread, demand skyrocketed. We rapidly expanded our operations, opening our first large-scale vertical growing facility. We also introduced our global licensing program, allowing partners in Europe, Asia, and South America to grow our patented MycoComposite™ using their own local agricultural waste. Today, our timeline is defined by continuous innovation—from advanced thermal insulators for cold-chain logistics to elegant, velvet-soft luxury packaging.</p>
+             <p>Looking ahead, we aim to completely displace EPS foam in high-volume industries by 2030, transforming the packaging industry from a linear waste stream into a circular, regenerative system.</p>
+          </div>
+        </div>
+      </div>
+
     </div><!-- /subpage-overlay -->
 
     <script>
@@ -5267,7 +5505,7 @@
       (function () {
         const footerHTML = `
         <footer style="background:#252729;color:rgba(255,255,255,0.75);padding:64px 28px 32px;margin-top:0;">
-          <div style="max-width:1280px;margin:0 auto;">
+          <div style="max-width:100%;margin:0 auto;">
             <div style="display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,0.08);">
               <div class="footer-brand">
             <div class="footer-logo-wrap">
