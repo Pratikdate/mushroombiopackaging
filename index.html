@@ -5175,12 +5175,12 @@
       const ARTICLE_METADATA = {
         'blog-journey': { type: 'blogs', file: 'journey', title: 'Our Journey Begins: The Mycelium Process and Final Product', category: 'Blog', meta: 'Featured Story · June 2026', back: 'news' },
         'blog-how-we-build': { type: 'blogs', file: 'how-we-build', title: 'How We Build It: Inside Our 13-Day Growing Process', category: 'Deep Dive', meta: 'Process · June 2026', back: 'news' },
-        'usecase-consumer': { type: 'blogs', file: 'usecase-consumer', title: 'Candles, Glass & Fragile Items — Consumer Goods Packaging', category: 'Use Case · Consumer Goods', meta: 'Real-world results with Seedlip Spirits', back: 'usecases' },
-        'usecase-electronics': { type: 'blogs', file: 'usecase-electronics', title: 'Server Components & Devices — Electronics Packaging', category: 'Use Case · Electronics & Tech', meta: 'Real-world results with Dell Technologies', back: 'usecases' },
-        'usecase-coldchain': { type: 'blogs', file: 'usecase-coldchain', title: 'Temperature-Controlled Shipping — Food & Cold Chain', category: 'Use Case · Food & Cold Chain', meta: 'Thermal performance data & industry trial results', back: 'usecases' },
-        'usecase-luxury': { type: 'blogs', file: 'usecase-luxury', title: 'Premium Gift Packaging — Luxury & Gifting', category: 'Use Case · Luxury & Gifting', meta: 'Real-world results with Lush × Magical Mushroom Company', back: 'usecases' },
-        'usecase-furniture': { type: 'blogs', file: 'usecase-furniture', title: 'Flat-Pack & Furniture Protection — Furniture & Home', category: 'Use Case · Furniture & Home', meta: 'Real-world context: IKEA EPS transition initiative', back: 'usecases' },
-        'usecase-d2c': { type: 'blogs', file: 'usecase-d2c', title: 'Perfectly Nested Protection — Custom D2C Interiors', category: 'Use Case · Custom Protection & D2C', meta: '2M+ pieces grown globally — unboxing results', back: 'usecases' },
+        'usecase-consumer': { type: 'blogs', file: 'usecase-consumer', title: 'Candles, Glass & Fragile Items — Consumer Goods Packaging', category: 'Use Case · Consumer Goods', meta: 'Real-world results with Seedlip Spirits', back: 'casestudies' },
+        'usecase-electronics': { type: 'blogs', file: 'usecase-electronics', title: 'Server Components & Devices — Electronics Packaging', category: 'Use Case · Electronics & Tech', meta: 'Real-world results with Dell Technologies', back: 'casestudies' },
+        'usecase-coldchain': { type: 'blogs', file: 'usecase-coldchain', title: 'Temperature-Controlled Shipping — Food & Cold Chain', category: 'Use Case · Food & Cold Chain', meta: 'Thermal performance data & industry trial results', back: 'casestudies' },
+        'usecase-luxury': { type: 'blogs', file: 'usecase-luxury', title: 'Premium Gift Packaging — Luxury & Gifting', category: 'Use Case · Luxury & Gifting', meta: 'Real-world results with Lush × Magical Mushroom Company', back: 'casestudies' },
+        'usecase-furniture': { type: 'blogs', file: 'usecase-furniture', title: 'Flat-Pack & Furniture Protection — Furniture & Home', category: 'Use Case · Furniture & Home', meta: 'Real-world context: IKEA EPS transition initiative', back: 'casestudies' },
+        'usecase-d2c': { type: 'blogs', file: 'usecase-d2c', title: 'Perfectly Nested Protection — Custom D2C Interiors', category: 'Use Case · Custom Protection & D2C', meta: '2M+ pieces grown globally — unboxing results', back: 'casestudies' },
         'blog-custom': { type: 'blogs', file: 'custom', title: 'Custom Packaging: Made by Nature, Designed by You', category: 'Custom Packaging', meta: 'Learn how we engineer bespoke mycelium solutions for unique product shapes.', back: 'home' },
         'blog-process': { type: 'blogs', file: 'process', title: 'The Growth Process: From Agricultural Waste to Packaging', category: 'Our Growth Process', meta: 'Discover the science and art behind our MycoComposite&trade; technology.', back: 'home' },
         'blog-timeline': { type: 'blogs', file: 'timeline', title: 'Our Timeline: Pioneering the Future of Sustainable Materials', category: 'Our Journey', meta: 'A look back at how we transitioned from a wild idea to a global manufacturing standard.', back: 'home' },
@@ -5225,8 +5225,8 @@
           const backBtn = document.querySelector('#sp-dynamic-viewer .sp-back');
           if (meta.back === 'news') {
             backBtn.setAttribute('onclick', "openPage('news')");
-          } else if (meta.back === 'usecases') {
-            backBtn.setAttribute('onclick', "openPage('sp-usecases')");
+          } else if (meta.back === 'casestudies') {
+            backBtn.setAttribute('onclick', "openPage('casestudies')");
           } else {
             backBtn.setAttribute('onclick', "closePage()");
           }
