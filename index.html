@@ -4908,7 +4908,7 @@
               <div
                 style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:#888;font-weight:600;margin-bottom:6px">
                 Address</div>
-              <div style="font-size:14px;color:#252729;line-height:1.6">Green Island, NY 12183<br>United States</div>
+              <div style="font-size:14px;color:#252729;line-height:1.6">Bangalore, Karnataka<br>India</div>
             </div>
             <div style="background:#f7f5f2;padding:32px 24px;text-align:center">
               <svg viewBox="0 0 24 24" fill="none" stroke="#252729" stroke-width="1.5"
@@ -4933,8 +4933,8 @@
               <div
                 style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:#888;font-weight:600;margin-bottom:6px">
                 Phone</div>
-              <div style="font-size:14px;color:#252729;line-height:1.6">(518) 268-5500<br><span
-                  style="color:#888;font-size:13px">Mon–Fri, 9am–5pm EST</span></div>
+              <div style="font-size:14px;color:#252729;line-height:1.6">+91 9767451907<br><span
+                  style="color:#888;font-size:13px">Mon–Fri, 9am–5pm IST</span></div>
             </div>
             <div style="background:#f7f5f2;padding:32px 24px;text-align:center">
               <svg viewBox="0 0 24 24" fill="none" stroke="#252729" stroke-width="1.5"
@@ -4951,7 +4951,7 @@
           </div>
 
           <!-- Two col: form + info -->
-          <div style="display:grid;grid-template-columns:1.1fr 0.9fr;gap:64px;align-items:start" class="sp-reveal">
+          <div style="max-width:760px;margin:0 auto" class="sp-reveal">
 
             <!-- Form -->
             <div style="background:#f7f5f2;padding:40px">
@@ -5108,51 +5108,6 @@
                 </svg>
                 <h3>Thank you!</h3>
                 <p>We've received your inquiry and will get back to you within 1–2 business days.</p>
-              </div>
-            </div>
-
-            <!-- Info side -->
-            <div>
-              <div class="sp-section-label">Offices</div>
-              <h2 class="sp-section-title" style="margin-bottom:28px">Find Us</h2>
-
-              <div style="border:1px solid #e0ddd8;padding:28px;margin-bottom:24px">
-                <div
-                  style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#888;font-weight:600;margin-bottom:10px">
-                  Headquarters</div>
-                <div style="font-size:15px;font-weight:700;margin-bottom:6px">Green Island, New York</div>
-                <div style="font-size:14px;color:#555;line-height:1.7">One Riverside Drive<br>Green Island, NY
-                  12183<br>United States</div>
-              </div>
-
-              <div style="border:1px solid #e0ddd8;padding:28px;margin-bottom:24px">
-                <div
-                  style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#888;font-weight:600;margin-bottom:10px">
-                  European Office</div>
-                <div style="font-size:15px;font-weight:700;margin-bottom:6px">Amsterdam, Netherlands</div>
-                <div style="font-size:14px;color:#555;line-height:1.7">Herengracht 182<br>1016 BS
-                  Amsterdam<br>Netherlands</div>
-              </div>
-
-              <div style="border:1px solid #e0ddd8;padding:28px;margin-bottom:32px">
-                <div
-                  style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#888;font-weight:600;margin-bottom:10px">
-                  Asia-Pacific Office</div>
-                <div style="font-size:15px;font-weight:700;margin-bottom:6px">Singapore</div>
-                <div style="font-size:14px;color:#555;line-height:1.7">71 Robinson Road, #14-01<br>Singapore 068895
-                </div>
-              </div>
-
-              <div style="background:#252729;color:#fff;padding:32px">
-                <div
-                  style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.5);font-weight:600;margin-bottom:10px">
-                  Follow Our Journey</div>
-                <div style="font-size:14px;color:rgba(255,255,255,0.8);line-height:1.8">
-                  <div>🌐 &nbsp;mushroompackaging.com</div>
-                  <div>📸 &nbsp;@mushroompackaging</div>
-                  <div>💼 &nbsp;Mushroom Bio Packaging</div>
-                  <div>🐦 &nbsp;@myceliumpack</div>
-                </div>
               </div>
             </div>
           </div>
@@ -5490,6 +5445,39 @@
       function submitSpForm() {
         const form = document.getElementById('sp-contact-form');
         const success = document.getElementById('sp-form-success');
+
+        // Extract values from form elements
+        const firstName = form.querySelector('input[placeholder="Jane"]').value || '';
+        const lastName = form.querySelector('input[placeholder="Smith"]').value || '';
+        const email = form.querySelector('input[type="email"]').value || '';
+        const company = form.querySelector('input[placeholder="Company name"]').value || '';
+        
+        const selects = form.querySelectorAll('select');
+        const inquiryType = selects[0] ? selects[0].value : '';
+        const volume = selects[1] ? selects[1].value : '';
+        
+        const message = form.querySelector('textarea') ? form.querySelector('textarea').value : '';
+
+        // Send payload via FormSubmit Ajax
+        fetch("https://formsubmit.co/ajax/pdate73@gmail.com", {
+          method: "POST",
+          headers: { 
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify({
+            name: `${firstName} ${lastName}`.trim(),
+            email: email,
+            company: company,
+            inquiryType: inquiryType,
+            monthlyVolume: volume,
+            message: message
+          })
+        })
+        .then(response => response.json())
+        .then(data => console.log("Form successfully submitted:", data))
+        .catch(error => console.error("Error submitting form:", error));
+
         form.style.opacity = '0';
         form.style.transition = 'opacity 0.3s';
         setTimeout(() => {
