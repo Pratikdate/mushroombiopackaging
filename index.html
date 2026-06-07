@@ -4567,7 +4567,7 @@
                 <h3>Candles, Glass & Fragile Items</h3>
                 <p>Custom-grown corner protectors and cradles provide the same drop-test performance as foam, with a
                   velvet-soft texture that enhances the unboxing experience — and composts in 45 days.</p>
-                <div class="sp-card-link" style="margin-top:14px">Enquire About This →</div>
+                <div class="sp-card-link" style="margin-top:14px;cursor:pointer" onclick="openArticle('usecase-consumer')">Read More →</div>
               </div>
             </div>
             <div class="sp-card">
@@ -4579,7 +4579,7 @@
                 <h3>Server Components & Devices</h3>
                 <p>Mycelium clamshells and inserts can be grown to exact device dimensions, meeting rigorous drop-test
                   standards while eliminating EPS foam entirely from the supply chain.</p>
-                <div class="sp-card-link" style="margin-top:14px">Enquire About This →</div>
+                <div class="sp-card-link" style="margin-top:14px;cursor:pointer" onclick="openArticle('usecase-electronics')">Read More →</div>
               </div>
             </div>
             <div class="sp-card">
@@ -4591,7 +4591,7 @@
                 <h3>Temperature-Controlled Shipping</h3>
                 <p>Our grown thermal liners offer insulation comparable to traditional foam coolers, with the added
                   benefit of being fully home-compostable — no landfill at the end of the journey.</p>
-                <div class="sp-card-link" style="margin-top:14px">Enquire About This →</div>
+                <div class="sp-card-link" style="margin-top:14px;cursor:pointer" onclick="openArticle('usecase-coldchain')">Read More →</div>
               </div>
             </div>
             <div class="sp-card">
@@ -4601,7 +4601,7 @@
                 <h3>Premium Gift Packaging</h3>
                 <p>Grown to precise dimensions and finished to brand specification — mycelium gift boxes tell a
                   sustainability story that resonates with conscious consumers, without compromising on elegance.</p>
-                <div class="sp-card-link" style="margin-top:14px">Enquire About This →</div>
+                <div class="sp-card-link" style="margin-top:14px;cursor:pointer" onclick="openArticle('usecase-luxury')">Read More →</div>
               </div>
             </div>
             <div class="sp-card">
@@ -4613,7 +4613,7 @@
                 <h3>Flat-Pack & Furniture Protection</h3>
                 <p>Breakaway corner protectors and edge guards grown to size — snapping apart cleanly at the seams for
                   effortless composting, protecting products during transit just as effectively as polystyrene.</p>
-                <div class="sp-card-link" style="margin-top:14px">Enquire About This →</div>
+                <div class="sp-card-link" style="margin-top:14px;cursor:pointer" onclick="openArticle('usecase-furniture')">Read More →</div>
               </div>
             </div>
             <div class="sp-card">
@@ -4624,7 +4624,7 @@
                 <div class="sp-card-tag">Use Case · Custom Protection & D2C</div>
                 <h3>Perfectly Nested Protection</h3>
                 <p>Provide a premium unboxing experience with custom-molded mycelium interiors. Tailored precisely to your products, they ensure maximum safety during transit while enriching the soil after use.</p>
-                <div class="sp-card-link" style="margin-top:14px">Enquire About This →</div>
+                <div class="sp-card-link" style="margin-top:14px;cursor:pointer" onclick="openArticle('usecase-d2c')">Read More →</div>
               </div>
             </div>
           </div>
@@ -5175,6 +5175,12 @@
       const ARTICLE_METADATA = {
         'blog-journey': { type: 'blogs', file: 'journey', title: 'Our Journey Begins: The Mycelium Process and Final Product', category: 'Blog', meta: 'Featured Story · June 2026', back: 'news' },
         'blog-how-we-build': { type: 'blogs', file: 'how-we-build', title: 'How We Build It: Inside Our 13-Day Growing Process', category: 'Deep Dive', meta: 'Process · June 2026', back: 'news' },
+        'usecase-consumer': { type: 'blogs', file: 'usecase-consumer', title: 'Candles, Glass & Fragile Items — Consumer Goods Packaging', category: 'Use Case · Consumer Goods', meta: 'Real-world results with Seedlip Spirits', back: 'usecases' },
+        'usecase-electronics': { type: 'blogs', file: 'usecase-electronics', title: 'Server Components & Devices — Electronics Packaging', category: 'Use Case · Electronics & Tech', meta: 'Real-world results with Dell Technologies', back: 'usecases' },
+        'usecase-coldchain': { type: 'blogs', file: 'usecase-coldchain', title: 'Temperature-Controlled Shipping — Food & Cold Chain', category: 'Use Case · Food & Cold Chain', meta: 'Thermal performance data & industry trial results', back: 'usecases' },
+        'usecase-luxury': { type: 'blogs', file: 'usecase-luxury', title: 'Premium Gift Packaging — Luxury & Gifting', category: 'Use Case · Luxury & Gifting', meta: 'Real-world results with Lush × Magical Mushroom Company', back: 'usecases' },
+        'usecase-furniture': { type: 'blogs', file: 'usecase-furniture', title: 'Flat-Pack & Furniture Protection — Furniture & Home', category: 'Use Case · Furniture & Home', meta: 'Real-world context: IKEA EPS transition initiative', back: 'usecases' },
+        'usecase-d2c': { type: 'blogs', file: 'usecase-d2c', title: 'Perfectly Nested Protection — Custom D2C Interiors', category: 'Use Case · Custom Protection & D2C', meta: '2M+ pieces grown globally — unboxing results', back: 'usecases' },
         'blog-custom': { type: 'blogs', file: 'custom', title: 'Custom Packaging: Made by Nature, Designed by You', category: 'Custom Packaging', meta: 'Learn how we engineer bespoke mycelium solutions for unique product shapes.', back: 'home' },
         'blog-process': { type: 'blogs', file: 'process', title: 'The Growth Process: From Agricultural Waste to Packaging', category: 'Our Growth Process', meta: 'Discover the science and art behind our MycoComposite&trade; technology.', back: 'home' },
         'blog-timeline': { type: 'blogs', file: 'timeline', title: 'Our Timeline: Pioneering the Future of Sustainable Materials', category: 'Our Journey', meta: 'A look back at how we transitioned from a wild idea to a global manufacturing standard.', back: 'home' },
@@ -5219,6 +5225,8 @@
           const backBtn = document.querySelector('#sp-dynamic-viewer .sp-back');
           if (meta.back === 'news') {
             backBtn.setAttribute('onclick', "openPage('news')");
+          } else if (meta.back === 'usecases') {
+            backBtn.setAttribute('onclick', "openPage('sp-usecases')");
           } else {
             backBtn.setAttribute('onclick', "closePage()");
           }
